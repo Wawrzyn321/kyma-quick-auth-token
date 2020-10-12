@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Kymcia Bearer token",
+    "version": "1.0",
+    "content_scripts": [
+    {
+      "matches": [
+        "https://*.hasselhoff.shoot.canary.k8s-hana.ondemand.com/*",
+        "http://*.hasselhoff.shoot.canary.k8s-hana.ondemand.com/*",
+        "https://*.hasselhoff.ga/*",
+        "http://*.hasselhoff.ga/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+      "default_popup":"popup.html"
+  },
+  "permissions": [
+      "tabs",
+      "storage",
+      "clipboardWrite",
+      "clipboardRead"
+    ]
+  }
