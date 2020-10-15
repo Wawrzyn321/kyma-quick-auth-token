@@ -19,7 +19,6 @@
   "permissions": [
       "tabs",
       "storage",
-      "clipboardWrite",
-      "clipboardRead"
+      "clipboardWrite"
     ]
   }
